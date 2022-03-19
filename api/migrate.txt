@@ -1,0 +1,16 @@
+create database
+npx sequelize db:create
+drop database
+npx sequelize db:drop
+
+generate model
+npx sequelize-cli model:generate --name Brand --attributes name:string
+
+execute migrate (all)
+npx sequelize db:migrate
+
+undo migration
+npx sequelize-cli db:migrate:undo:all
+
+
+
